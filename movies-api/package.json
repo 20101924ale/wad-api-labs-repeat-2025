@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
-    "dev": "nodemon --exec npm start"
+    "dev": "babel-node ./initialise-dev/initDevDB.js && nodemon --exec npm start"
   },
   "author": "alexandradinea",
   "license": "ISC",
@@ -21,6 +21,7 @@
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "express-async-handler": "^1.2.0",
-    "mongoose": "^8.17.1"
+    "mongoose": "^8.17.1",
+    "node-fetch": "^2.7.0"
   }
 }
